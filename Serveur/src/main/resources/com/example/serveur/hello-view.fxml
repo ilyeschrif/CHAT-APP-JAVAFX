@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.serveur.vmessagesController">
+    <Region VBox.vgrow="ALWAYS" />
+
+    <children>
+
+        <TextArea fx:id="messagesArea" maxWidth="300" prefHeight="380" editable="false" />
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <TextField fx:id="inputField" prefWidth="240" />
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendMessage" text="Send" />
+        </HBox>
+    </children>
+
+    <Region VBox.vgrow="ALWAYS" /> <!-- Add more regions for additional space if needed -->
+
+</VBox>
